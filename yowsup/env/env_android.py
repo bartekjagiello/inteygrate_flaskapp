@@ -18,8 +18,8 @@ class AndroidYowsupEnv(YowsupEnv):
         "KtOrNTQcc0e+t"
 
     _KEY = "eQV5aq/Cg63Gsq1sshN9T3gh+UUp0wIw0xgHYT1bnCjEqOJQKCRrWxdAe2yvsDeCJL+Y4G3PRD2HUF7oUgiGo8vGlNJOaux26k+A2F3hj8A="
-	_MD5_CLASSES = "1I2weuZmVg+uL50+HXeSJw=="
-	_VERSION = "2.16.328"
+    _MD5_CLASSES = "1I2weuZmVg+uL50+HXeSJw=="
+    _VERSION = "2.16.328"
     _OS_NAME = "Android"
     _OS_VERSION = "4.3"
     _DEVICE_NAME = "armani"
