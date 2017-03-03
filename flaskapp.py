@@ -29,12 +29,8 @@ def sendmsg():
     res +=msg +'/'
     token = request.args.get('token')
     res +=token +'/'
-    loginExt = request.args.get('login')
-    res +=loginExt +'/'
-    passwordExt = request.args.get('password')
-    res +=passwordExt +'/'
     if(str(token) == expected_token):
-        client = Client(login=loginExt, password=passwordExt.decode(encoding='UTF-8',errors='strict'))
+        client = Client(login='48664972472', password='n1dKV5BB13nUQTeD0iQuNKGlFIA='))
         res += str(client.send_message(to, msg)) 
     
     else:
