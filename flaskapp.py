@@ -22,19 +22,25 @@ def msg():
 
 @app.route('/sendmsg')
 def sendmsg():
+    res = ''
     to = request.args.get('to')
+    res +=to +'/'
     msg = request.args.get('msg')
+    res +=msg +'/'
     token = request.args.get('token')
+    res +=token +'/'
     loginExt = request.args.get('login')
+    res +=loginExt +'/'
     passwordExt = request.args.get('password')
+    res +=passwordExt +'/'
     if(str(token) == expected_token):
         client = Client(login='48664972472', password='n1dKV5BB13nUQTeD0iQuNKGlFIA=')
-        res = client.send_message(to, msg)  
+        res += str(client.send_message(to, msg)) 
     
     else:
         res = 'Unauthorized'
     
-    return str(res)
+    return res
 
 if __name__ == '__main__':
     app.run()
